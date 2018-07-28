@@ -1,5 +1,7 @@
 package project.core.Int;
 
-public interface ServiceInt {
+import java.security.interfaces.RSAPrivateKey;
 
+public interface ServiceInt {
+	public RSAPrivateKey getPrivateKey(String JKSFileName, String JKSAlias, String JKSPassword);
 }
