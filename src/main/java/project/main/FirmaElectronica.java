@@ -1,0 +1,14 @@
+package project.main;
+
+public class FirmaElectronica {
+
+	public FirmaElectronica() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
