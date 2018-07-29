@@ -1,13 +1,16 @@
 package project.main;
 
+import project.core.ImpInt.ServiceImpInt;
+
 public class FirmaElectronica {
 
-	public FirmaElectronica() {
-		// TODO Auto-generated constructor stub
+	public FirmaElectronica(String firma) {
+		ServiceImpInt obj = new ServiceImpInt();
+		System.out.println("Firma: " + obj.firmar(firma));
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		new FirmaElectronica(args[0]);
 
 	}
 
