@@ -4,9 +4,12 @@ import project.core.ImpInt.ServiceImpInt;
 
 public class FirmaElectronica {
 
-	public FirmaElectronica(String firma) {
+	public FirmaElectronica(String cadena) {
 		ServiceImpInt obj = new ServiceImpInt();
-		System.out.println("Firma: " + obj.firmar(firma));
+		String firma = obj.firmar(cadena);
+		System.out.println("Firma: " + firma);
+		boolean firmaValida = obj.validar(firma);
+		System.out.println(firmaValida);
 	}
 
 	public static void main(String[] args) {
